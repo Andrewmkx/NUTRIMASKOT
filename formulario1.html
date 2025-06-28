@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Formulario de Envío</title>
+</head>
+<body>
+<section>
+    <form>
+        <h1>Formulario para Envío de Productos</h1>
+
+        <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" id="email" required>
+            <label for="email">Ingrese su Correo Electrónico</label>
+        </div>
+
+        <div class="inputbox">
+            <ion-icon name="home-outline"></ion-icon>
+            <input type="text" id="direccion" required>
+            <label for="direccion">Ingrese la Dirección de su Domicilio</label>
+        </div>
+
+        <div class="inputbox">
+            <ion-icon name="gift-outline"></ion-icon>
+            <input type="text" id="producto" required>
+            <label for="producto">Nombre del Producto</label>
+        </div>
+
+        <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="number" id="edad" required min="0">
+            <label for="edad">Ingrese su Edad</label>
+        </div>
+
+        <div class="forget">
+            <label for="recordar"><input type="checkbox" id="recordar">Recordar</label>
+            <a href="#">Olvidé la contraseña</a>
+        </div>
+
+        <button type="submit">Enviar</button>
+        <div class="register">
+            <p>No tengo una cuenta <a href="#">Regístrate</a></p>
+        </div>
+    </form>
+</section>
+</body>
+</html>
+
+
+
+

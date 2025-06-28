@@ -1,0 +1,254 @@
+  body {
+    padding-top: 120px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 98.5%;
+    height: auto;
+    top: 0;
+    left: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(53, 191, 43);
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    z-index: 1000;
+  }
+  
+
+  .imagen-header {
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      height: auto; 
+  }
+  
+  .imagen-header img {
+      max-height: 90px; 
+      width: auto;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+
+  nav h1 {
+      font-size: 1.5rem;
+      color: rgb(53, 191, 43);
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+  }
+
+  nav ul li {
+      margin: 0 15px;
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      color: rgb(53, 191, 43);
+      font-weight: 600;
+  }
+
+  nav ul li a:hover {
+      text-decoration: underline;
+  }
+    
+  .banner {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(53, 191, 43);
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50px 0 50px 0;
+    margin-bottom: 20px;
+    
+  }
+  
+  
+  .categorias {
+    margin: 20px;
+  } 
+
+
+  
+  .grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  .grid-categorias a{
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .categoria {
+    background-color: rgb(53, 191, 43);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 30px 0 30px 0;
+  }
+  
+
+  .productos {
+    margin: 20px;
+    padding: 0 10px;
+  }
+
+  .estilo-encabezado{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: rgb(53, 191, 43);
+      border-radius: 40px 0px 40px 0px;
+      margin: 0;
+      padding: 10px 0;
+      text-align:  center;
+      color: #fff;
+      font-size: 50px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+  .grid-productos{
+    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    flex-wrap: wrap;
+    gap: 20px;
+
+  }
+  .grid-productos-perros, .grid-productos-gatos, .grid-productos-aves, .grid-productos-peces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+  }
+  
+  .producto {
+    flex: 1 1 calc(25% - 20px); 
+    max-width: 300px; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .producto {
+      flex: 1 1 calc(50% - 20px); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .producto {
+      flex: 1 1 100%; 
+    }
+  }
+  
+
+  
+  .producto {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height: 250px; 
+    object-fit: auto; 
+    border-radius: 5px;
+    margin-bottom: 10px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .producto h3 {
+    margin: 0; 
+  }
+  .producto p{
+    margin: 0;
+    color: #4CAF50;
+    font-size: 18px;
+  }
+  
+  .producto img:hover{
+    transform: scale(1.5);
+  }
+  
+  .pie {
+    color: #fff;
+    padding: 30px 0;
+    width: 100%;
+    height: auto;
+    background-color: #333;
+  }
+  .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .info, .redes-sociales {
+    flex-basis: 45%;
+  }
+
+  .info h4, .redes-sociales h4 {
+    margin-bottom: 10px;
+  }
+
+  .redes-sociales ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .redes-sociales ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .redes-sociales ul li:last-child {
+    margin-right: 0;
+  }
+
+  .redes-sociales ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .redes-sociales img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3em; 
+    height: auto; 
+    margin-right: 10px;
+    cursor: pointer;
+  }
+    
+  
+    
